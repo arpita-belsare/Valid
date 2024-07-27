@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f4f4f4;
+    background-image: url('./image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 4px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1.1em;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+input.valid {
+    border-color: rgb(21, 158, 28);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #110f31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #966a19;
+    background: rgb(13, 90, 13);
+}
+#validationform{
+line-height:7px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.feedback {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+span{
+    color: red;
+    font-size: 0.8em;
+}
+@media (min-width: 768px) {
+    body {
+        padding: 30px;
+    }
+
+    fieldset {
+        padding: 25px;
+        max-width: 400px;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 40px;
+    }
+
+    fieldset {
+        padding: 30px;
+        max-width: 450px;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    fieldset {
+        padding: 20px;
+        max-width: 300px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
